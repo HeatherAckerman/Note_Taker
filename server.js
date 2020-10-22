@@ -1,24 +1,18 @@
-//Start with basic server
 //Dependencies
 const express = require("express");
 const app = express();
 
-//Port-- use || and add Heroku server info
-let PORT = process.env.PORT || 6002;
+//Port
+let PORT = process.env.PORT || 6003;
 
 //Helps Express with data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
-//Routes??? Figure out how to use routes from api and html.. check HotRestaurant as example
+//Routes
 require("./routes/htmlRoutes")(app);
-
-
-
-
-
-
+require("./routes/apiRoutes")(app);
 
 //Server.listen
 app.listen(PORT, function() {

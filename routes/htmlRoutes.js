@@ -1,3 +1,17 @@
-//GET /notes returns notes.html
+var path = require("path");
 
-//GET * returns index.html
+module.exports = function (app) {
+
+    app.get("/", function(req, res) {
+        res.send("Welcome to the Note Taker!");
+      });
+      
+    // //GET /notes returns notes.html
+    // app.get("/notes", function (req, res) {
+    //     res.sendFile(path.join(__dirname, "..\Develop\public\notes.html"));
+    // });
+    // //GET * returns index.html
+    // app.get("*", function (req, res) {
+    //     res.sendFile(path.join(__dirname, "..\Develop\public\index.html"));
+    // });
+};

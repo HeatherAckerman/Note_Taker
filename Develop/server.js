@@ -3,12 +3,12 @@ const express = require("express");
 const app = express();
 
 //Port
-let PORT = process.env.PORT || 6020;
+let PORT = process.env.PORT || 6030;
 
 //Helps Express with data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("Develop/public"));
+app.use(express.static("public"));
 
 // Routes
 require("./routes/htmlRoutes")(app);

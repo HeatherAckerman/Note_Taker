@@ -1,11 +1,16 @@
 {
   "name": "Note_Taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "The Note_Taker will help you stay organized and manage your time by letting you save all your tasks in one convienent, easy to use, location.",
   "main": "server.js",
+  "dependencies": {
+    "npm-watch": "^0.7.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +22,5 @@
   "bugs": {
     "url": "https://github.com/HeatherAckerman/Note_Taker/issues"
   },
-  "homepage": "https://github.com/HeatherAckerman/Note_Taker#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/HeatherAckerman/Note_Taker#readme"
 }

@@ -8,6 +8,7 @@ let PORT = process.env.PORT || 6018;
 //Helps Express with data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static("public"));
 
 
 //Routes

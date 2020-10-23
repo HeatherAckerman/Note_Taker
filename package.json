@@ -4,6 +4,7 @@
   "description": "The Note_Taker will help you stay organized and manage your time by letting you save all your tasks in one convienent, easy to use, location.",
   "main": "server.js",
   "dependencies": {
+    "express": "^4.17.1",
     "npm-watch": "^0.7.0"
   },
   "devDependencies": {},

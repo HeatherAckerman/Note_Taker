@@ -7,7 +7,7 @@
   *Not yet functional
 
   ## Usage
-  *Not yet functional
+  Simply type in the title for your note, enter the note itself, and click save. 
 
   ## Contributing
   NA
